@@ -23,7 +23,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 openai.api_key = config.OPENAI_KEY
 
 # Initialize Slack App with the provided bot token
-app = App(token=config.OAuth_Slack_Key1)
+app = App(token=config.BOT_LEVEL_TOKEN_SLACK)
 
 
 # Load the GPT index from disk
@@ -125,4 +125,4 @@ def get_text(data: dict) -> str:
 
 # Start the Socket Mode handler
 if __name__ == "__main__":
-    SocketModeHandler(app, config.App_Level_Token_Slack).start()
+    SocketModeHandler(app, config.APP_LEVEL_TOKEN_SLACK).start()
