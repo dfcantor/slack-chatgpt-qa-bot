@@ -23,10 +23,10 @@ A Slack bot that makes it possible for users to chat with documents.
 
 ![image](https://github.com/dfcantor/slack-chatgpt-qa-bot/assets/88911560/62910386-aa10-4ef9-b4cd-e870759d1e75)
 
-  d. Generate an App-Level Token, enable the following scopes: 
+  d. Generate an App-Level Token, enable the following scopes and then retrieve the token: 
 
-    connections:write, authorizations:read,app_configurations:write; retrieve the token.
-
+        connections:write, authorizations:read,app_configurations:write; 
+        
 2. Get your OpenAI API token and retrieve it.
 3. In the command line, run:
 
@@ -34,15 +34,15 @@ A Slack bot that makes it possible for users to chat with documents.
 
        $ python -m venv venv
 
-  For Windows systems: 
+     For Windows systems: 
 
        $ ./venv/Scripts/activate
 
-  For Unix-based systems:
+     For Unix-based systems:
 
        $ source venv/bin/activate
 
-  Then install requirements:
+     Then install requirements:
 
        $ pip install -r requirements.txt
 
