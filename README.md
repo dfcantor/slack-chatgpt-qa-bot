@@ -76,6 +76,3 @@ A Slack bot that makes it possible for users to chat with documents.
 - pypdf2
 
 
-## Environment variables required 
-
-
