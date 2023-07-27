@@ -99,7 +99,11 @@ def event_test(body):
     ts = event.get("ts")  ## Gets the timestamp from the event
 
     # Query the index with the message text and get a response
-    query_engine = index.as_query_engine()
+    query_engine = CitationQueryEngine.from_args(
+        index,
+        similarity_top_k=3,
+        citation_chunk_size=1024,
+    )
     response = query_engine.query(text)
 
     # Extract the desired message and sources from the response object
